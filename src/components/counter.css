@@ -38,3 +38,15 @@
     margin-top: 6rem;
 
 } */
+
+@media screen and (max-width : 600px) {
+    .counter-number {
+        font-size: 5rem;
+    }
+
+    .countdown-container {
+        gap: 4rem;
+        line-height: 50px;
+
+    }
+}

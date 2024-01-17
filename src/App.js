@@ -18,13 +18,26 @@ function App() {
         <div className='countdown-container'>
           <Counter title='Dias' number={day} />
           <Counter title='Horas' number={hour} />
+        </div>
+        <div className='countdown-container'>
           <Counter title='Minutos' number={minute} />
           <Counter title='Segundos' number={second} />
         </div>
 
-        <div className='action'>
+        {/* <div className='action'>
           <a href='https://forms.gle/qbe9VkYMyZH6QiPs6'><button type='text'>garanta já a sua vaga</button></a>
           <p>clique no botão para fazer a inscrição!</p>
+        </div> */}
+
+        <div className='over'>
+          <span className='umapena'>
+            AS INSCRIÇÕES JÁ SE ENCERRARAM, UMA PENA!
+          </span>
+
+          <span className='whats'>Mas se precisar falar com a gente, <a href='https://api.whatsapp.com/send?phone=5519989318887&text=Oi!%20Queria%20conversar%20sobre%20o%20Acampa.'>
+            CLIQUE AQUI
+          </a>
+          </span>
         </div>
 
       </div>
