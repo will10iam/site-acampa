@@ -2,7 +2,8 @@ import './App.css';
 import Title from './components/title';
 import Counter from './components/counter';
 
-import BACKG from './assets/bgacampa.png'
+/* import BACKG from './assets/bgacampa.png'
+import BACKG2 from './assets/bgacampamobile.png' */
 
 import useCountdown from './hooks/useCountdown';
 
@@ -12,14 +13,12 @@ function App() {
 
 
   return (
-    <div className="App" style={{ backgroundImage: `url(${BACKG})` }}>
+    <div className="App">
       <div className='container'>
         <Title title='ACAMPA2024 começa em..' />
         <div className='countdown-container'>
           <Counter title='Dias' number={day} />
           <Counter title='Horas' number={hour} />
-        </div>
-        <div className='countdown-container'>
           <Counter title='Minutos' number={minute} />
           <Counter title='Segundos' number={second} />
         </div>

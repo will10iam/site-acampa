@@ -10,6 +10,7 @@ body {
 
 .App {
   min-height: 100vh;
+  background-image: url('./assets/bgacampa.png');
   background-size: cover;
   background-position: top;
   display: flex;
@@ -72,11 +73,7 @@ body {
 @media screen and (max-width: 600px) {
   .umapena {
     text-align: center;
-  }
-
-  .App {
-    background-image: url('./assets/bgacampamobile.png');
-    background-size: cover;
+    font-size: 1.2rem;
   }
 
   .over {
@@ -85,5 +82,12 @@ body {
 
   .whats {
     margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .App {
+    background-image: url('./assets/bgacampamobile.png');
+    background-size: cover;
+    background-position: top;
   }
 }
