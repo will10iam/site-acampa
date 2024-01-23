@@ -86,8 +86,8 @@ body {
   }
 
   .App {
-    background-image: url('./assets/bgacampamobile.png');
+    background-image: url('./assets/bgacampamobile2.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
   }
 }
