@@ -88,6 +88,6 @@ body {
   .App {
     background-image: url('./assets/bgacampamobile.png');
     background-size: cover;
-    background-position: top;
+    background-position: center;
   }
 }
