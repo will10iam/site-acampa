@@ -6,6 +6,7 @@ import Counter from './components/counter';
 import BACKG2 from './assets/bgacampamobile.png' */
 
 import useCountdown from './hooks/useCountdown';
+import Playlist from './components/playlist';
 
 
 function App() {
@@ -15,7 +16,11 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-        <Title title='ACAMPA2024 começa em..' />
+        <div>
+          <Title title='ACAMPA2024 começa em..' />
+          <Playlist />
+        </div>
+
         <div className='countdown-container'>
           <Counter title='Dias' number={day} />
           <Counter title='Horas' number={hour} />
