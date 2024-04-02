@@ -89,6 +89,34 @@ body {
     margin-top: 210px;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    background-color: #FFF3ef;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.form label {
+    color: black;
+    margin-bottom: 0.8rem;
+}
+
+.form input {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+
+.form-container {
+    border: 1px solid #FFF3ef;
+}
+
+.form img {
+    width: 80px;
+}
 
 
 
