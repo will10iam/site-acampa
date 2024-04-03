@@ -55,6 +55,10 @@ function RegistrationForm() {
 
     };
 
+    const handleRadioChange = (name, value) => {
+        setFormData({ ...formData, [name]: value })
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -191,15 +195,145 @@ function RegistrationForm() {
                     </div>
 
                     <div className='form'>
+                        É a primeira vez que acampa com a gente?
+                        <div className='radio-inputs'>
+                            <label >
+                                <input
+                                    type="radio"
+                                    name="firstTime"
+                                    value={formData.firstTime}
+                                    checked={formData.firstTime === "Sim"}
+                                    onChange={() => handleRadioChange("firstTime", "Sim")}
+
+                                /> Sim
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="firstTime"
+                                    value={formData.firstTime}
+                                    checked={formData.firstTime === "Não"}
+                                    onChange={() => handleRadioChange("firstTime", "Não")}
+                                />
+                                Não
+                            </label>
+                        </div>
+                    </div>
+
+                    <div className='form'>
+                        Você precisará de transporte para a chacará?
+                        <div className='radio-inputs'>
+                            <label >
+                                <input
+                                    type="radio"
+                                    name="transport"
+                                    value={formData.transport}
+                                    checked={formData.transport === "Sim"}
+                                    onChange={() => handleRadioChange("transport", "Sim")}
+
+                                /> Sim
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="transport"
+                                    value={formData.transport}
+                                    checked={formData.transport === "Não"}
+                                    onChange={() => handleRadioChange("transport", "Não")}
+                                />
+                                Não
+                            </label>
+                        </div>
+                    </div>
+
+                    <div className='form'>
+                        Você topa participar de todas as brincadeiras?
+                        <div className='radio-inputs'>
+                            <label >
+                                <input
+                                    type="radio"
+                                    name="pranks"
+                                    value={formData.pranks}
+                                    checked={formData.pranks === "Sim"}
+                                    onChange={() => handleRadioChange("pranks", "Sim")}
+
+                                /> Sim
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="pranks"
+                                    value={formData.pranks}
+                                    checked={formData.pranks === "Não"}
+                                    onChange={() => handleRadioChange("pranks", "Não")}
+                                />
+                                Não
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="pranks"
+                                    value={formData.pranks}
+                                    checked={formData.pranks === "Depende"}
+                                    onChange={() => handleRadioChange("pranks", "Depende")}
+                                />
+                                Depende
+                            </label>
+                        </div>
+                    </div>
+
+                    <div className='form'>
                         <label>
-                            De qual igreja você é ?
+                            Você toma algum remédio diariamente?  Se sim, qual remédio?
                         </label>
                         <input
-                            type="radio"
-                            name="firstTime"
-                            value={formData.firstTime}
+                            type="text"
+                            name="remedy"
+                            value={formData.remedy}
                             onChange={handleChange}
                         />
+                    </div>
+
+                    <div className='form'>
+                        <label>
+                            É alérgico a algum alimento? Se sim, quais alimentos?
+                        </label>
+                        <input
+                            type="text"
+                            name="allergic"
+                            value={formData.allergic}
+                            onChange={handleChange}
+                        />
+                    </div>
+
+                    <div className='form'>
+                        <p>ATENÇÃO! Menores de 18 anos, clique no botão para baixar a ficha de autorização!</p>
+                        <button>Baixar Ficha</button>
+                    </div>
+
+                    <div className='form'>
+                        <label>
+                            Como você fará o pagamento? <p> **preços para apenas 1 pessoa, para promoções e descontos procure a liderança!</p>
+                        </label>
+
+                        <select
+                            name="payment"
+                            value={formData.payment}
+                            onChange={handleChange}
+                        >
+                            <option value="À vista">À vista</option>
+                            <option value="2x">2x R$125,00</option>
+                            <option value="3x">3x R$83,33</option>
+                            <option value="4x">4x R$62,50</option>
+                            <option value="5x">5x R$50,00</option>
+                            <option value="6x">6x R$41,66</option>
+                            <option value="7x">7x R$35,71</option>
+                            <option value="8x">8x R$31,25</option>
+                            <option value="9x">9x R$27,77</option>
+                            <option value="10x">10x de R$25,00</option>
+                        </select>
+
+
                     </div>
                     <button type="submit">Me inscrever</button>
                 </form>
