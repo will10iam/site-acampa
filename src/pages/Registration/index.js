@@ -118,83 +118,106 @@ function RegistrationForm() {
                 </div>
 
                 <form onSubmit={handleSubmit} className='form-container'>
-                    <div className='form'>
-                        {formData.imageUrl && (
-                            <div>
-                                <img src={formData.imageUrl} alt="Imagem Perfil" className='imageUrl' />
+
+                    <div className='azul-claro'>
+
+                        <div className='verde-claro'>
+                            {formData.imageUrl && (
+                                <div>
+                                    <img src={formData.imageUrl} alt="Imagem Perfil" className='image' />
+                                </div>
+                            )}
+                            <label>
+                                Insira sua foto aqui
+                            </label>
+                            <input
+                                type="file"
+                                name="profileImage"
+                                onChange={handleChange}
+                            />
+                        </div>
+
+                        <div className="user-data">
+                            <div className="rosa">
+                                <div className='name'>
+                                    <label>
+                                        Nome Completo
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div className='date'>
+                                    <label>
+                                        Data de Nascimento
+                                    </label>
+                                    <input
+                                        type="date"
+                                        name="birthday"
+                                        value={formData.birthday}
+                                        onChange={handleChange}
+                                    />
+                                </div>
                             </div>
-                        )}
-                        <label>
-                            Insira sua foto aqui
-                        </label>
-                        <input
-                            type="file"
-                            name="profileImage"
-                            onChange={handleChange}
-                        />
+
+                            <div className="amarelo">
+                                <div className='tel'>
+                                    <label>
+                                        Seu Telefone
+                                    </label>
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+
+                                <div className='doc'>
+                                    <label>
+                                        RG/CPF
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="doc"
+                                        value={formData.doc}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+
+                            </div>
+
+
+                            <div className="azul-escuro">
+                                <div className='church'>
+                                    <label>
+                                        De qual igreja você é ?
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="church"
+                                        value={formData.church}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div className='form'>
-                        <label>
-                            Nome Completo
-                        </label>
-                        <input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            placeholder='Insira seu nome aqui..'
-                        />
-                    </div>
-                    <div className='form'>
-                        <label>
-                            Data de Nascimento
-                        </label>
-                        <input
-                            type="date"
-                            name="birthday"
-                            value={formData.birthday}
-                            onChange={handleChange}
-                        />
-                    </div>
 
-                    <div className='form'>
-                        <label>
-                            Seu Telefone
-                        </label>
-                        <input
-                            type="tel"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                        />
-                    </div>
 
-                    <div className='form'>
-                        <label>
-                            RG/CPF
-                        </label>
-                        <input
-                            type="text"
-                            name="doc"
-                            value={formData.doc}
-                            onChange={handleChange}
-                        />
-                    </div>
 
-                    <div className='form'>
-                        <label>
-                            De qual igreja você é ?
-                        </label>
-                        <input
-                            type="text"
-                            name="church"
-                            value={formData.church}
-                            onChange={handleChange}
-                        />
-                    </div>
 
-                    <div className='form'>
+
+
+
+
+                    <div className=''>
                         É a primeira vez que acampa com a gente?
                         <div className='radio-inputs'>
                             <label >
@@ -220,7 +243,7 @@ function RegistrationForm() {
                         </div>
                     </div>
 
-                    <div className='form'>
+                    <div className=''>
                         Você precisará de transporte para a chacará?
                         <div className='radio-inputs'>
                             <label >
@@ -246,7 +269,7 @@ function RegistrationForm() {
                         </div>
                     </div>
 
-                    <div className='form'>
+                    <div className=''>
                         Você topa participar de todas as brincadeiras?
                         <div className='radio-inputs'>
                             <label >
@@ -282,7 +305,7 @@ function RegistrationForm() {
                         </div>
                     </div>
 
-                    <div className='form'>
+                    <div className=''>
                         <label>
                             Você toma algum remédio diariamente?  Se sim, qual remédio?
                         </label>
@@ -294,7 +317,7 @@ function RegistrationForm() {
                         />
                     </div>
 
-                    <div className='form'>
+                    <div className=''>
                         <label>
                             É alérgico a algum alimento? Se sim, quais alimentos?
                         </label>
@@ -306,12 +329,12 @@ function RegistrationForm() {
                         />
                     </div>
 
-                    <div className='form'>
+                    <div className=''>
                         <p>ATENÇÃO! Menores de 18 anos, clique no botão para baixar a ficha de autorização!</p>
                         <button>Baixar Ficha</button>
                     </div>
 
-                    <div className='form'>
+                    <div className=''>
                         <label>
                             Como você fará o pagamento? <p> **preços para apenas 1 pessoa, para promoções e descontos procure a liderança!</p>
                         </label>

@@ -89,7 +89,191 @@ body {
     margin-top: 210px;
 }
 
-.form {
+.azul-claro {
+    display: flex;
+}
+
+.verde-claro {
+    /* border: 1px solid greenyellow; */
+    width: 220px;
+    height: 250px;
+    text-align: center;
+}
+
+.verde-claro input {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.rosa {
+    display: flex;
+    /* border: 1px solid deeppink; */
+    gap: 15px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+    height: 70px;
+    background-color: #F5F5F5;
+
+}
+
+.name input {
+    width: 794px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #B0B0B0;
+}
+
+.name label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    height: 70px;
+    background-color: #F5F5F5;
+
+}
+
+.date input {
+    width: 150px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #B0B0B0;
+}
+
+.date label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.amarelo {
+    display: flex;
+    /* border: 1px solid orange; */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+.tel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+    height: 70px;
+    background-color: #F5F5F5;
+
+}
+
+.tel input {
+    width: 450px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #B0B0B0;
+}
+
+.tel label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.doc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    height: 70px;
+    background-color: #F5F5F5;
+
+}
+
+.doc input {
+    width: 500px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #B0B0B0;
+}
+
+.doc label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.azul-escuro {
+    display: flex;
+    /* border: 1px solid darkblue; */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+.church {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+    height: 86px;
+    background-color: #F5F5F5;
+
+}
+
+.church input {
+    width: 996px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #B0B0B0;
+}
+
+.church label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,26 +282,14 @@ body {
     border-radius: 10px;
     margin-bottom: 10px;
     font-family: Montserrat, sans-serif;
-}
-
-.form label {
-    color: black;
-    margin-bottom: 0.8rem;
-}
-
-.form input {
-    width: 80%;
-    margin-bottom: 10px;
-}
+} */
 
 
 .form-container {
     border: 1px solid #FFF3ef;
 }
 
-.form img {
-    width: 80px;
-}
+
 
 
 
