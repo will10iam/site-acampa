@@ -5,17 +5,20 @@
     padding-block: 0.5rem;
     padding-inline: 1.25rem;
     background-color: #E09600;
-    border-radius: 9999px;
+    border-radius: 9px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffff;
+    color: black;
     gap: 10px;
     font-weight: bold;
     border: 3px solid #FFCF70;
     outline: none;
     overflow: hidden;
     font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 a {
@@ -26,6 +29,7 @@ a {
     width: 24px;
     height: 24px;
     transition: all 0.3s ease-in-out;
+    color: #F5f5f5;
 }
 
 .button:hover {

@@ -28,6 +28,7 @@ body {
     align-items: center;
 }
 
+
 .countdown-container {
     display: flex;
     justify-content: center;
@@ -75,7 +76,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -30px;
+    margin-top: 30px;
 }
 
 .logo img {
@@ -89,20 +90,51 @@ body {
     margin-top: 210px;
 }
 
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
 .azul-claro {
     display: flex;
+    column-gap: 15px;
 }
 
 .verde-claro {
     /* border: 1px solid greenyellow; */
     width: 220px;
-    height: 250px;
+    height: 260px;
     text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    padding-top: 5px;
 }
 
 .verde-claro input {
-    margin-left: 50px;
+    /* margin-left: 25px;
     margin-top: 5px;
+    outline: none;
+    cursor: pointer; */
+    display: none;
+}
+
+.verde-claro span {
+    z-index: 99;
+    opacity: 0.7;
+    transition: all 0.5s;
+    display: none;
+}
+
+.verde-claro p {
+    color: #F5F5F5;
+    font-family: Montserrat, sans-serif;
+    margin-top: 10px;
+}
+
+.verde-claro label {
+    color: black;
 }
 
 .image {
@@ -140,6 +172,7 @@ body {
     border: none;
     padding: 5px;
     background-color: #B0B0B0;
+    outline: none;
 }
 
 .name label {
@@ -165,6 +198,8 @@ body {
     border: none;
     padding: 5px;
     background-color: #B0B0B0;
+    outline: none;
+    cursor: pointer;
 }
 
 .date label {
@@ -199,6 +234,7 @@ body {
     border: none;
     padding: 5px;
     background-color: #B0B0B0;
+    outline: none;
 }
 
 .tel label {
@@ -224,6 +260,7 @@ body {
     border: none;
     padding: 5px;
     background-color: #B0B0B0;
+    outline: none;
 }
 
 .doc label {
@@ -231,14 +268,12 @@ body {
     margin-bottom: 10px;
 }
 
-
 .azul-escuro {
     display: flex;
     /* border: 1px solid darkblue; */
     gap: 15px;
     margin-top: 10px;
 }
-
 
 .church {
     display: flex;
@@ -258,12 +293,257 @@ body {
     border: none;
     padding: 5px;
     background-color: #B0B0B0;
+    outline: none;
 }
 
 .church label {
     color: black;
     margin-bottom: 10px;
 }
+
+
+.laranja {
+    display: flex;
+    gap: 10px;
+}
+
+.first {
+    display: flex;
+}
+
+
+.roxo {
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+
+.roxo label {
+    color: black;
+    cursor: pointer;
+}
+
+.roxo p {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.verde-agua {
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.verde-agua label {
+    color: black;
+    cursor: pointer;
+}
+
+.verde-agua p {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.vermelho {
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.vermelho label {
+    color: black;
+    cursor: pointer;
+}
+
+.vermelho p {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.pink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+    height: 70px;
+    background-color: #F5F5F5;
+    margin-top: 10px;
+}
+
+.pink input {
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #B0B0B0;
+    outline: none;
+}
+
+.pink label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.azul-marinho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+    height: 70px;
+    background-color: #F5F5F5;
+    margin-top: 10px;
+}
+
+.azul-marinho input {
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #B0B0B0;
+    outline: none;
+
+}
+
+.azul-marinho label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.white {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F39f20;
+    color: black;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+    height: 70px;
+}
+
+.white p {
+    color: black;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    margin-left: 80px;
+}
+
+.white button {
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    font-family: Montserrat, sans-serif;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 5px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.green {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    color: black;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 150px;
+}
+
+.green label {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 70px;
+
+}
+
+.green select {
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #B0B0B0;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+    width: 700px;
+    font-size: 15px;
+    margin-left: 70px;
+}
+
+.green option {
+    background-color: #F5F5F5;
+    font-family: Montserrat, sans-serif;
+}
+
+.green p {
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    margin-left: 70px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.whats {
+    color: black;
+    margin-right: 150px;
+}
+
+.whats a {
+    background-color: #4CBD2F;
+    padding: 10px 50px 10px 50px;
+    color: black;
+    border-radius: 5px;
+    margin-left: 70px;
+}
+
+.whats p {
+    width: 230px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    text-align: center;
+    margin-left: -85px;
+}
+
+.form-input input {
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 5px;
+}
+
+.touch {
+    color: #F5F5F5;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.obrigado {
+    text-align: center;
+}
+
 
 
 
@@ -285,10 +565,10 @@ body {
 } */
 
 
-.form-container {
+/* .form-container {
     border: 1px solid #FFF3ef;
 }
-
+ */
 
 
 
@@ -312,7 +592,8 @@ body {
     }
 
     .App {
-        background-image: url('./assets/bgacampamobile2.png');
+        background-color: black;
+        /* background-image: url('./assets/bgacampamobile2.png') */
         background-size: cover;
         background-position: top;
     }
