@@ -403,14 +403,14 @@ function RegistrationForm() {
                     </div>
                     {/* <button type="submit">Me inscrever</button> */}
                     <div className="button2">
-                        <Button children="Me inscrever" type="submit" />
+                        <Button children="Garantir AGORA minha vaga!" type="submit" />
                     </div>
 
                 </form>
-            </div>
+            </div >
 
 
-        </div>
+        </div >
     );
 }
 
