@@ -499,12 +499,13 @@ body {
 .payment {
     display: flex;
     flex-direction: column;
+    margin-left: -50px;
 
 }
 
 .whats {
     color: black;
-    margin-right: 150px;
+    margin-right: 80px;
 }
 
 .whats a {
@@ -751,20 +752,60 @@ body {
         margin-top: -2px;
     }
 
-    .white {
+
+    .green {
         width: 350px;
         margin-left: -9px;
-        height: 90px;
     }
 
-    .white input {
-        width: 350px;
-        margin-top: -1px;
+    .green select {
+        width: 150px;
+        margin-left: 45px;
     }
 
-    .white label {
+    .payment label {
         font-size: 15px;
-        text-align: center;
-        margin-top: -2px;
+        width: 200px;
+        margin-left: 50px;
+        margin-top: -10px;
+    }
+
+    .payment p {
+        margin-left: 50px;
+        font-size: 10px;
+        margin-top: 8px;
+    }
+
+
+    .whats p {
+        margin-left: -50px;
+        font-size: 13px;
+        text-align: end;
+        width: 200px;
+    }
+
+    .whats a {
+        padding: 7px 7px 7px 7px;
+        font-size: 13px;
+        margin-left: 20px;
+    }
+
+    .white {
+        height: 90px;
+        width: 350px;
+        margin-left: -9px;
+    }
+
+    .white p {
+        margin-left: -1px;
+        font-size: 12px;
+    }
+
+    .white button {
+        padding: 0 20px 0 20px;
+        margin-left: 35px;
+        margin-right: -5px;
+        font-size: 13px;
+        font-weight: bold;
     }
 }
