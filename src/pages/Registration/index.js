@@ -133,7 +133,7 @@ function RegistrationForm() {
                     <img src={logo} alt="" />
                 </div>
 
-                <div>
+                <div className='title'>
                     <Title title="Preencha os campos abaixo e se inscreva pro nosso acampa!" />
                 </div>
 
