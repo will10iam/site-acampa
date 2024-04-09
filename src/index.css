@@ -573,11 +573,8 @@ body {
 
 
 
-
-
-
 @media screen and (max-width: 600px) {
-    .umapena {
+    /* .umapena {
         text-align: center;
         font-size: 1.2rem;
     }
@@ -589,12 +586,185 @@ body {
     .whats {
         margin-bottom: 50px;
         text-align: center;
-    }
+    } */
 
+    /* ESTILIZAÇÃO DA HOME */
     .App {
         background-color: black;
         /* background-image: url('./assets/bgacampamobile2.png') */
         background-size: cover;
         background-position: top;
+    }
+
+    .countdown-container {
+        margin-top: -40px;
+    }
+
+    .button1 {
+        margin-top: 120px;
+    }
+
+    .logo {
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    /* ESTILIZAÇÃO DO FORMS */
+    .azul-claro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rosa {
+        align-self: center;
+    }
+
+    .name {
+        width: 150px;
+    }
+
+    .name input {
+        width: 150px;
+    }
+
+    .date {
+        width: 165px;
+        height: 71px;
+    }
+
+    .date input {
+        width: 150px;
+    }
+
+    .date label {
+        font-size: 15px;
+    }
+
+    .amarelo {
+        align-self: center;
+    }
+
+    .tel {
+        width: 150px;
+    }
+
+    .tel input {
+        width: 150px;
+    }
+
+    .doc {
+        width: 165px;
+    }
+
+    .doc input {
+        width: 150px;
+    }
+
+    .azul-escuro {
+        align-self: center;
+    }
+
+    .church {
+        width: 350px;
+    }
+
+    .church input {
+        width: 350px;
+    }
+
+    .laranja {
+        flex-direction: column;
+        row-gap: 3px;
+    }
+
+    .roxo {
+        align-self: center;
+        width: 350px;
+        border-radius: 5px;
+    }
+
+
+    .verde-agua {
+        align-self: center;
+        width: 350px;
+        border-radius: 5px;
+    }
+
+    .verde-agua p {
+        font-size: 15px;
+    }
+
+    .vermelho {
+        align-self: center;
+        width: 350px;
+        border-radius: 5px;
+    }
+
+    .vermelho p {
+        font-size: 14px;
+    }
+
+    .form-input input {
+        margin-top: s5px;
+        margin-left: 40px;
+        margin-right: 5px;
+    }
+
+    .form-input {
+        text-align: center;
+        margin-left: -50px;
+    }
+
+    .pink {
+        width: 350px;
+        margin-left: -9px;
+        height: 90px;
+    }
+
+    .pink input {
+        width: 350px;
+        margin-top: -1px;
+    }
+
+    .pink label {
+        font-size: 15px;
+        text-align: center;
+        margin-top: -2px;
+    }
+
+    .azul-marinho {
+        width: 350px;
+        margin-left: -9px;
+        height: 90px;
+    }
+
+    .azul-marinho input {
+        width: 350px;
+        margin-top: -1px;
+    }
+
+    .azul-marinho label {
+        font-size: 15px;
+        text-align: center;
+        margin-top: -2px;
+    }
+
+    .white {
+        width: 350px;
+        margin-left: -9px;
+        height: 90px;
+    }
+
+    .white input {
+        width: 350px;
+        margin-top: -1px;
+    }
+
+    .white label {
+        font-size: 15px;
+        text-align: center;
+        margin-top: -2px;
     }
 }

@@ -27,7 +27,7 @@ function App() {
         </div>
 
         <div>
-          <Title title='ACAMPA2025 começa em..' />
+          <Title title='ACAMPA2025 começa em' />
 
         </div>
 

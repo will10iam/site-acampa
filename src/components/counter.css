@@ -43,16 +43,22 @@
     .counter-number {
         font-size: 3rem;
         gap: 1rem;
+        text-align: center;
+
     }
 
     .counter-text {
         font-size: 0.8rem;
-        margin-left: -20px;
+        margin-left: -5px;
     }
 
     .countdown-container {
         gap: 1rem;
         line-height: 30px;
+        margin-left: 10px;
+    }
 
+    .counter {
+        left: -5px;
     }
 }
