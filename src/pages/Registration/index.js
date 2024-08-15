@@ -18,7 +18,7 @@ import { getStorage, ref as storageRef, uploadBytes } from 'firebase/storage'
 import Button from '../../components/button';
 
 
-const firebaseConfig = {
+/* const firebaseConfig = {
     apiKey: "AIzaSyCKBe_ihYqUodo0nKTobRAjAYB8tTc1AzE",
     authDomain: "site-acampa.firebaseapp.com",
     projectId: "site-acampa",
@@ -26,7 +26,17 @@ const firebaseConfig = {
     messagingSenderId: "902054107094",
     appId: "1:902054107094:web:80da466455b7c503f03677",
     measurementId: "G-NY5L59GT5S"
+}; */
+
+const firebaseConfig = {
+    apiKey: "AIzaSyD4pQDLh8FMrZ6d1QKhodUE7ODKmijPcoc",
+    authDomain: "inscricoes-acampa.firebaseapp.com",
+    projectId: "inscricoes-acampa",
+    storageBucket: "inscricoes-acampa.appspot.com",
+    messagingSenderId: "838016517694",
+    appId: "1:838016517694:web:954ba7b4805c037d84336f"
 };
+
 
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
@@ -338,7 +348,7 @@ function RegistrationForm() {
 
                     <div className='pink'>
                         <label>
-                            Você toma algum remédio diariamente?  Se sim, qual remédio?
+                            Você toma algum remédio diariamente ou é alérgico a algum remédio?  Se sim, qual remédio?
                         </label>
                         <input
                             type="text"
